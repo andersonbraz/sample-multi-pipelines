@@ -8,10 +8,9 @@ class JobTransform:
         self.df_extracted = df_extracted
 
     def _process_data(self):
-        df = self.df_extracted
 
-        price = df["price"].str.replace("R$", "").str.replace(".", "").str.replace(",", "")
-        # price = df["price"].str.replace(re.compile("[R$,.]", re.UNICODE), "")
+        df = self.df_extracted
+        price = df["price"].str.replace("R$", "")
         df["price"] = price
 
         return df
