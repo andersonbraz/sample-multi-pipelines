@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Hardware",
+    "parameter": "hardware"
+  },
+  {
+    "id": 2,
+    "name": "Periféricos",
+    "parameter": "perifericos"
+  },
+  {
+    "id": 3,
+    "name": "Computadores",
+    "parameter": "computadores"
+  },
+  {
+    "id": 4,
+    "name": "Games",
+    "parameter": "gamer"
+  },
+  {
+    "id": 5,
+    "name": "Celular & Smartphone",
+    "parameter": "celular-smartphone"
+  },
+  {
+    "id": 6,
+    "name": "TV",
+    "parameter": "tv"
+  },
+  {
+    "id": 7,
+    "name": "Áudio",
+    "parameter": "audio"
+  },
+  {
+    "id": 8,
+    "name": "Projetores",
+    "parameter": "projetores"
+  },
+  {
+    "id": 9,
+    "name": "Espaço Gamer",
+    "parameter": "espaco-gamer"
+  },
+  {
+    "id": 10,
+    "name": "Escritório",
+    "parameter": "escritorio"
+  },
+  {
+    "id": 11,
+    "name": "Casa Inteligente",
+    "parameter": "casa-inteligente"
+  },
+  {
+    "id": 12,
+    "name": "Tablets, iPads e E-readers",
+    "parameter": "tablets-ipads-e-e-readers"
+  },
+  {
+    "id": 13,
+    "name": "Câmeras e Drones",
+    "parameter": "cameras-e-drones"
+  },
+  {
+    "id": 14,
+    "name": "Energia",
+    "parameter": "energia"
+  },
+  {
+    "id": 15,
+    "name": "Conectividade",
+    "parameter": "conectividade"
+  },
+  {
+    "id": 16,
+    "name": "Geek",
+    "parameter": "geek"
+  },
+  {
+    "id": 17,
+    "name": "Eletrodomésticos",
+    "parameter": "eletrodomesticos"
+  },
+  {
+    "id": 18,
+    "name": "Eletroportáteis",
+    "parameter": "eletroportateis"
+  },
+  {
+    "id": 19,
+    "name": "Ar e Ventilação",
+    "parameter": "ar-e-ventilacao"
+  },
+  {
+    "id": 20,
+    "name": "Segurança",
+    "parameter": "seguranca"
+  },
+  {
+    "id": 21,
+    "name": "Automação",
+    "parameter": "automacao"
+  },
+  {
+    "id": 22,
+    "name": "Telefonia Fixa",
+    "parameter": "telefonia-fixa"
+  },
+  {
+    "id": 23,
+    "name": "Robótica",
+    "parameter": "robotica"
+  },
+  {
+    "id": 24,
+    "name": "Serviços Digitais",
+    "parameter": "servicos-digitais"
+  },
+  {
+    "id": 25,
+    "name": "Moda",
+    "parameter": "moda"
+  },
+  {
+    "id": 26,
+    "name": "Ferramentas",
+    "parameter": "ferramentas"
+  },
+  {
+    "id": 27,
+    "name": "Cuidados Pessoais",
+    "parameter": "beleza-saude"
+  }
+]
