@@ -1,0 +1,26 @@
+[
+  {
+    "file": "diabetes.csv",
+    "url": "https://github.com/MicrosoftLearning/DP100/blob/master/data/diabetes.csv"
+  },
+  {
+    "file": "customer.csv",
+    "url": "https://github.com/MicrosoftLearning/dp-203-azure-data-engineer/blob/master/Allfiles/labs/04/data/customer.csv"
+  },
+  {
+    "file": "products.csv",
+    "url": "https://github.com/MicrosoftLearning/dp-203-azure-data-engineer/blob/master/Allfiles/labs/07/data/products.csv"
+  },
+  {
+    "file": "2019.csv",
+    "url": "https://github.com/MicrosoftLearning/dp-203-azure-data-engineer/blob/master/Allfiles/labs/06/data/2019.csv"
+  },
+  {
+    "file": "2020.csv",
+    "url": "https://github.com/MicrosoftLearning/dp-203-azure-data-engineer/blob/master/Allfiles/labs/06/data/2020.csv"
+  },
+  {
+    "file": "devices.csv",
+    "url": "https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.pt-br/blob/main/streaming/data/devices.csv"
+  }
+]
