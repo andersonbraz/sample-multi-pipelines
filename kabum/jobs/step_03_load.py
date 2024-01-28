@@ -7,6 +7,7 @@ class JobLoad:
         self.df_trasform = df_trasform
 
     def run_tasks(self) -> pd.DataFrame:
+        
         data = self.df_trasform
         df = pd.DataFrame(data)
 

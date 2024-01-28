@@ -1,8 +1,8 @@
-import utils.json_client as uf
+from github_extractor.jobs.step_01_extract import JobExtract
+import utils.handlers.handler_json as handler
 
 
-files = uf.get_json_to_list("data/github/files.json")
-for file in files:
-    print(file)
+lista_arquivos = handler.get_json_to_list("data/github/files.json")
 
-
+job_extract = JobExtract(lista_arquivos)
+df_step_01 = job_extract.run_tasks()

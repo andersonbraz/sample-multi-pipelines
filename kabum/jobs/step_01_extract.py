@@ -26,6 +26,7 @@ class JobExtract:
         return result
 
     def _prepare_content(self) -> pd.DataFrame:
+        
         content = self._get_content()
         soup = BeautifulSoup(str(content), "html.parser")
 
