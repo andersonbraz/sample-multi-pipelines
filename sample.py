@@ -1,30 +1,43 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
+from time import sleep
 
-url = 'https://github.com/MicrosoftLearning/DP100/blob/master/data/diabetes.csv'
+# Acessa a URL
+driver = webdriver.Edge()
+driver.get("https://dados.cvm.gov.br/organization/cvm")
 
+# Espera o carregamento da página
+sleep(5)
 
-def main():
-    driver = webdriver.Edge()
-    driver.get(url)
-    time.sleep(15)
+# Localiza o campo de pesquisa
+campo_pesquisa = driver.find_element(By.ID, "field-giant-search")
 
-    # Seleciona o botão de download
-    download_button = driver.find_element(By.XPATH, "//button[contains(@aria-label, 'Download raw content')]")
+# Preenche o campo de pesquisa
+campo_pesquisa.send_keys("Fundos de Investimento + Documentos + Extrato das Informações")
 
-    # Obtém o valor do atributo `href` do botão
-    download_url = download_button.get_attribute('href')
-    print("------------------ Url: ", download_url)
+# Localiza o botão de pesquisa
+botao_pesquisa = driver.find_element(By.XPATH, "//button[@aria-label='Submit' and @value='search']")
 
-    # # Abre o arquivo
-    # with open(download_url, 'wb') as f:
-    #     f.write(driver.get(download_url).content)
+# Clica no botão de pesquisa
+botao_pesquisa.click()
 
-    # Aguarda o download do arquivo ser concluído
-    time.sleep(15)
-    driver.close()
+# Espera o resultado da pesquisa
+sleep(5)
 
+link_dataset = driver.find_element(By.CSS_SELECTOR, "a[href='/dataset/fi-doc-extrato'][data-format='csv']")
 
-if __name__ == '__main__':
-    main()
+# Clica no link do dataset
+link_dataset.click()
+
+sleep(5)
+
+# Localiza o link para o extrato de fundos de investimento
+link_extrato = driver.find_element(By.CSS_SELECTOR, "a.heading[title='Extratos de Fundos de Investimento (2024)']")
+
+# Clica no link do extrato
+link_extrato.click()
+
+sleep(15)
+
+# Fecha o navegador
+driver.close()

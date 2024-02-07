@@ -1,6 +1,6 @@
-from kabum.jobs.step_01_extract import JobExtract
-from kabum.jobs.step_02_transform import JobTransform
-from kabum.jobs.step_03_load import JobLoad
+from solutions.kabum.jobs.step_01_extract import JobExtract
+from solutions.kabum.jobs.step_02_transform import JobTransform
+from solutions.kabum.jobs.step_03_load import JobLoad
 from datetime import datetime
 
 inicio_pipeline = datetime.now()

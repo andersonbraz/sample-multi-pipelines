@@ -14,5 +14,5 @@ class JobLoad:
         reports = GenReport(df_obt=df)
         reports.generate()
 
-        df.to_csv('files/repos.csv', encoding='utf-8', sep=";", index=False)
+        df.to_csv('files/repos.csv', encoding='utf-8', sep=",", index=False)
         return df

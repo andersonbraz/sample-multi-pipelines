@@ -1,6 +1,6 @@
-from github.jobs.step_01_extract import JobExtract
-from github.jobs.step_02_transform import JobTransform
-from github.jobs.step_03_load import JobLoad
+from solutions.github.jobs.step_01_extract import JobExtract
+from solutions.github.jobs.step_02_transform import JobTransform
+from solutions.github.jobs.step_03_load import JobLoad
 from datetime import datetime
 
 inicio_pipeline = datetime.now()
