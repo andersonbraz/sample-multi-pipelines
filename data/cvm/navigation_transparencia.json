@@ -1,0 +1,48 @@
+[
+  {
+    "site":
+      {
+        "url": "https://portaldatransparencia.gov.br/receitas/consulta",
+        "time_wait": 5
+      }
+  },
+  {
+    "steps": [
+      {
+        "step": 1,
+        "type_selector": "id",
+        "key_selector": "field-giant-search",
+        "input_selector": "Fundos de Investimento + Documentos + Extrato das Informações",
+        "time_wait": 5
+      },
+      {
+        "step": 2,
+        "type_selector": "xpath",
+        "key_selector": "//button[@aria-label='Submit' and @value='search']",
+        "input_selector": "click",
+        "time_wait": 5
+      },
+      {
+        "step": 3,
+        "type_selector": "css selector",
+        "key_selector": "a[href='/dataset/fi-doc-extrato'][data-format='csv']",
+        "input_selector": "click",
+        "time_wait": 5
+      },
+      {
+        "step": 4,
+        "type_selector": "css selector",
+        "key_selector": "a.heading[title='Extratos de Fundos de Investimento (2024)']",
+        "input_selector": "click",
+        "time_wait": 10
+      },
+      {
+        "step": 5,
+        "type_selector": "css selector",
+        "key_selector": "a.btn.btn-primary.resource-url-analytics",
+        "input_selector": "click",
+        "time_wait": 10
+      }
+    ]
+  }
+]
