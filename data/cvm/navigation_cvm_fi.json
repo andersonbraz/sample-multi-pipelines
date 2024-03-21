@@ -1,15 +1,15 @@
 [
   {
-    "site":
-      {
-        "url": "https://dados.cvm.gov.br/organization/cvm",
-        "time_wait": 5
-      }
+    "site": {
+      "url": "https://dados.cvm.gov.br/organization/cvm",
+      "time_wait": 5
+    }
   },
   {
     "steps": [
       {
         "step": 1,
+        "action": "pesquisa",
         "type_selector": "id",
         "key_selector": "field-giant-search",
         "input_selector": "Fundos de Investimento + Documentos + Extrato das Informações",
@@ -17,6 +17,7 @@
       },
       {
         "step": 2,
+        "action": "navegacao",
         "type_selector": "xpath",
         "key_selector": "//button[@aria-label='Submit' and @value='search']",
         "input_selector": "click",
@@ -24,6 +25,7 @@
       },
       {
         "step": 3,
+        "action": "navegacao",
         "type_selector": "css selector",
         "key_selector": "a[href='/dataset/fi-doc-extrato'][data-format='csv']",
         "input_selector": "click",
@@ -31,6 +33,7 @@
       },
       {
         "step": 4,
+        "action": "navegacao",
         "type_selector": "css selector",
         "key_selector": "a.heading[title='Extratos de Fundos de Investimento (2024)']",
         "input_selector": "click",
@@ -38,6 +41,7 @@
       },
       {
         "step": 5,
+        "action": "download",
         "type_selector": "css selector",
         "key_selector": "a.btn.btn-primary.resource-url-analytics",
         "input_selector": "click",
